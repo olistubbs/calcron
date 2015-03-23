@@ -4,8 +4,9 @@ This script will execute commands based on the name of the file they are held in
 
 For Example
 
-$ cat ~/calcron/201503231030
-service httpd restart
+`$ cat ~/calcron/201503231030
+
+service httpd restart`
 
 
 This will (or attempt to) restart httpd at 10:30am on 23rd March 2015
