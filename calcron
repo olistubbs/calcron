@@ -1,0 +1,13 @@
+#!/bin/bash
+
+date=`date +%d%m%g-%H%M`
+base=~/.calcron
+event="$base/events/$date"
+
+if [ -a $event ]; then
+	for a in `cat $event`; do
+		$a
+	done
+else
+	echo "File Doesn't exist"
+fi
